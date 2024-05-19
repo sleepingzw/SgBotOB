@@ -1,0 +1,2 @@
+# SgBotOB
+ OneBotTypeBot

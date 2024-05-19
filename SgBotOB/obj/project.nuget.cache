@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "9Re61ozRFdKs+9CJ94NAF0mZfktNnMNwW5CycpEcfkU4JiQWrVK8LNQu7psUFiQKkjq9219HuXnbTjCy7EuFxQ==",
+  "success": true,
+  "projectFilePath": "D:\\vspjt\\SgBotOB\\SgBotOB\\SgBotOB.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SLPZ\\.nuget\\packages\\mliybs.onebot.v11\\0.9.4\\mliybs.onebot.v11.0.9.4.nupkg.sha512",
+    "C:\\Users\\SLPZ\\.nuget\\packages\\spectre.console\\0.49.1\\spectre.console.0.49.1.nupkg.sha512",
+    "C:\\Users\\SLPZ\\.nuget\\packages\\system.reactive\\6.0.0\\system.reactive.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
