@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SgBotOB.Utils
+namespace SgBotOB.Utils.Internal
 {
     /// <summary>
     /// 实现的Log输出器
@@ -29,28 +29,23 @@ namespace SgBotOB.Utils
         {
             try
             {
-                AnsiConsole.Markup($"[green][[SgBot.Open]][/] > {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
+                AnsiConsole.Markup($"[green][[SgBotOB]][/] > {DateTime.Now:yyyy-MM-dd HH:mm:ss}");
                 switch (level)
                 {
                     case 0:
-                        AnsiConsole.Markup(" [white]" +
-                                           "[[信息]] [/]");
+                        AnsiConsole.Markup(" [white][[信息]] [/]");
                         break;
                     case 1:
-                        AnsiConsole.Markup(" [yellow]" +
-                                           "[[重要]] [/]");
+                        AnsiConsole.Markup(" [yellow][[重要]] [/]");
                         break;
                     case 2:
-                        AnsiConsole.Markup(" [red]" +
-                                           " [[警告]] [/]");
+                        AnsiConsole.Markup(" [red][[警告]] [/]");
                         break;
                     case 3:
-                        AnsiConsole.Markup(" [red]" +
-                                           " [[错误]] [/]");
+                        AnsiConsole.Markup(" [red][[错误]] [/]");
                         break;
                     case 4:
-                        AnsiConsole.Markup(" [red]" +
-                                           " [[致命]] [/]");
+                        AnsiConsole.Markup(" [red][[致命]] [/]");
                         break;
                     default:
                         throw new ArgumentOutOfRangeException(nameof(level), level, null);
@@ -74,5 +69,5 @@ namespace SgBotOB.Utils
             错误,
             致命
         }
-    }    
+    }
 }

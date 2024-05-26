@@ -12,5 +12,6 @@ namespace SgBotOB.Data
     {
         public static string? ExePath;
         public static BotConfig BotConfig = new();
+        public static List<BotInfo> BotInfo = [];
     }
 }
