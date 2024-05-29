@@ -38,8 +38,8 @@ namespace SgBotOB.Utils.Scaffolds
             var skInfo = new SKImageInfo(900, 370);
             using var surface = SKSurface.Create(skInfo);
             using var glCanvas = surface.Canvas;
-            var index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
-            var skTypeface = SKFontManager.Default.GetFontStyles(index).CreateTypeface(0);
+            //var index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
+            var skTypeface = SKTypeface.FromFile(Path.Combine(StaticData.ExePath!, "Data/Fonts/simsun.ttc"), 0);
             // using var skTypeface = SKTypeface.FromFile("C:/AlisaBot/Fonts/华康少女文字W5.ttf", 0);
             using var skFont = new SKFont(skTypeface, 30);
             using var skTextPaint = new SKPaint
@@ -88,8 +88,8 @@ namespace SgBotOB.Utils.Scaffolds
                 $"Data/Temp/CardTempImage/{name}-{DateTime.Now:yyyy-M-dd--HH-mm-ss}.png");
             using var surface = SKSurface.Create(skInfo);
             using var glCanvas = surface.Canvas;
-            var index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
-            var skTypeface = SKFontManager.Default.GetFontStyles(index).CreateTypeface(0);
+            //var index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
+            var skTypeface = SKTypeface.FromFile(Path.Combine(StaticData.ExePath!, "Data/Fonts/simsun.ttc"), 0);
             using var skFont = new SKFont(skTypeface, 20);
             using var skBlackPaint = new SKPaint
             {

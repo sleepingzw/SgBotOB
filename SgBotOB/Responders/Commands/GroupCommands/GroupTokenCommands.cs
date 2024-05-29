@@ -195,8 +195,8 @@ namespace SgBotOB.Responders.Commands.GroupCommands
             groupMsgInfo.User.Token += tokenGet;
             groupMsgInfo.User.Card -= 1;
             await DatabaseOperator.UpdateUserInfo(groupMsgInfo.User);
-            var ret = "file://" + ImageMaker.MakeCardImage(groupMsgInfo.User.UserId.ToString(), cardList);
-            var chain = new MessageChainBuilder().Image(ret)
+            var ret =  ImageMaker.MakeCardImage(groupMsgInfo.User.UserId.ToString(), cardList);
+            var chain = new MessageChainBuilder().Image("file://" + ret)
                 .Text($"{groupMsgInfo.User.Nickname},消耗90傻狗力翻牌,翻出{tokenGet}傻狗力,你现在有{groupMsgInfo.User.Token}傻狗力了").Build();
             RespondQueue.AddGroupRespond(new GroupRespondInfo(groupMsgInfo, chain));
             TaskHolder.DeleteTask(ret);

@@ -16,10 +16,10 @@ namespace SgBotOB.Utils.Extra
     internal static class GameImageMaker
     {
         #region 笔刷初始化
-        static int index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
+        // static int index = SKFontManager.Default.FontFamilies.ToList().IndexOf("宋体"); // 创建宋体字形
         // using var skTypeface = SKTypeface.FromFile("C:\\AlisaBot\\Fonts\\华康少女文字W5.ttf", 0);
-        static SKTypeface skTypeface = SKFontManager.Default.GetFontStyles(index).CreateTypeface(0);
-        static SKTypeface skEmojiTypeface = SKTypeface.FromFile(Path.Combine(StaticData.ExePath!, "Data/NotoColorEmoji.ttf"), 0);
+        static SKTypeface skTypeface = SKTypeface.FromFile(Path.Combine(StaticData.ExePath!, "Data/Fonts/simsun.ttc"), 0);
+        static SKTypeface skEmojiTypeface = SKTypeface.FromFile(Path.Combine(StaticData.ExePath!, "Data/Fonts/NotoColorEmoji.ttf"), 0);
         // static SKFont skFont = new SKFont(skTypeface, 20);
         static SKPaint skEmojiPaint = new SKPaint
         {

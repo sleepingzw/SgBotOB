@@ -11,7 +11,7 @@ namespace SgBotOB.Model.SgGame
     internal class Battle
     {
         private const int DefaultCrit = 10;
-        public static BattleLog MakeBattle(Player playerp, Player enemyp)
+        public BattleLog MakeBattle(Player playerp, Player enemyp)
         {
             var player = new BattleUnit(playerp);
             var enemy = new BattleUnit(enemyp);

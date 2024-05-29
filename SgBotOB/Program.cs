@@ -13,9 +13,11 @@ using SlpzToolKit;
 using Spectre.Console;
 using System.Diagnostics;
 using System.Reactive.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text.Json;
 
 var exit = new ManualResetEvent(false);
+AppDomain.CurrentDomain.FirstChanceException += FirstChanceHandler;
 var test = false;
 var log = false;
 #region 初始化程序
@@ -58,3 +60,8 @@ BotManager.SubscribeAsync(bot,test,log);
 Logger.Log($"登录Bot {StaticData.BotConfig.BotQQ} 成功", 1);
 Initializer.StartQueueOut();
 exit.WaitOne();
+static void FirstChanceHandler(object source, FirstChanceExceptionEventArgs e)
+{
+    Console.WriteLine("FirstChanceException event raised in {0}: {1}",
+        AppDomain.CurrentDomain.FriendlyName, e.Exception.StackTrace);
+}

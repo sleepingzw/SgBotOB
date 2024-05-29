@@ -76,7 +76,7 @@ namespace SgBot.Open.Utils.Internal
                     var BotWs = OneBot.Websocket(StaticData.BotConfig.Address!);
                     return BotWs;
                 case "WebSocketReverse":
-                    var BotWsR = OneBot.WebsocketReverse(StaticData.BotConfig.Address!);
+                    var BotWsR = OneBot.WebsocketReverse("ws://127.0.0.1:5140/onebot");
                     return BotWsR;
                 case "HTTP":
                     var BotHttp = OneBot.Http("localhost", "3000");

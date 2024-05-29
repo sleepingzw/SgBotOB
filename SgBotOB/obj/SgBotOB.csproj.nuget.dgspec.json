@@ -51,7 +51,7 @@
             },
             "Mliybs.OneBot.V11": {
               "target": "Package",
-              "version": "[0.9.6, )"
+              "version": "[0.9.8, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",

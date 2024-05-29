@@ -11,7 +11,7 @@ using Mliybs.OneBot.V11.Utils;
 
 namespace SgBotOB.Model
 {
-    public class GroupMessageInfo(OneBot bot, int msgId, bool canCommand, Group group, User user, string allPlainMessage, List<string> plainMessages, List<long> atTargets, List<ImageMessage> imageMessages, bool atMe, bool isOwner, Role role, Role botRole,MessageChain rawChain)
+    public class GroupMessageInfo(OneBot bot, int msgId, bool canCommand, Group group, User user, string allPlainMessage, List<string> plainMessages, List<long> atTargets, List<ImageMessage> imageMessages, bool atMe, bool isOwner,Role userRole,MessageChain rawChain)
     {
         public OneBot bot = bot;
         public int MsgId = msgId;
@@ -24,8 +24,7 @@ namespace SgBotOB.Model
         public List<ImageMessage> ImageMessages = imageMessages;
         public bool AtMe = atMe;
         public bool IsOwner = isOwner;
-        public Role UserRole = role;
-        public Role BotRole = botRole;
+        public Role? UserRole=userRole;
         public MessageChain RawChain= rawChain;
         public async Task<Message> Send(MessageChain chain)
         {

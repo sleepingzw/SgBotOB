@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using SlpzToolKit;
+using SgBotOB.Utils.Internal;
 
 namespace SgBotOB.Responders.Commands.SgGameCommands
 {
@@ -34,7 +35,7 @@ namespace SgBotOB.Responders.Commands.SgGameCommands
             player.Power--;
             var battle = new Battle();
             var enemy = DatabaseOperator.FindPlayerByRank(player.Rank, player.Id);
-            var log = Battle.MakeBattle(player, enemy);
+            var log = battle.MakeBattle(player, enemy);
             SgGamePvpResult result;
             if (log.IsWin)
             {
@@ -128,7 +129,7 @@ namespace SgBotOB.Responders.Commands.SgGameCommands
         /// </summary>
         /// <param name="groupMsgInfo"></param>
         /// <returns></returns>
-        [ChatCommand(new string[] { "决斗" }, new string[] { "/game.duel", "/g.duel" }, true)]
+        [ChatCommand(["决斗"], new string[] { "/game.duel", "/g.duel" }, true)]
         public static async Task Duel(GroupMessageInfo groupMsgInfo)
         {
             if (groupMsgInfo.AtTargets.Count == 0)
@@ -143,7 +144,7 @@ namespace SgBotOB.Responders.Commands.SgGameCommands
             player.Refresh();
             var battle = new Battle();
             var enemy = await DatabaseOperator.FindPlayer(target);
-            var log = Battle.MakeBattle(player, enemy);
+            var log = battle.MakeBattle(player, enemy);
             var result = new SgGamePvpResult()
             {
                 CoinGet = 0,

@@ -84,8 +84,8 @@ namespace SgBotOB.Utils.Scaffolds
             }
             var rawChain=chain.Build();
             var sepTextMsgList = GetSeparatedPlainMessage(g.Message);
-            var botInfo = await bot.GetGroupMemberInfo(g.GroupId, g.SelfId);
-            var botRole=botInfo.Role;
+            //var botInfo = await bot.GetGroupMemberInfo(g.GroupId, g.SelfId);
+            //var botRole=botInfo.Role;
             var userId = (long)g.Sender.UserId!;
             var groupReceiverInfo = new GroupMessageInfo(bot, g.MessageId, canCommand,
                 await DatabaseOperator.FindGroup(g.GroupId),
@@ -97,7 +97,7 @@ namespace SgBotOB.Utils.Scaffolds
                 atMe,
                 isOwner,
                 (Role)g.Sender.Role!,
-                botRole, rawChain);
+                rawChain);
 
             var groupInfo = await bot.GetGroupInfo(g.GroupId);
             if (groupInfo.GroupName != groupReceiverInfo.Group.GroupName)

@@ -21,11 +21,14 @@ namespace SgBotOB.Responders.Commands.GroupCommands
         [ChatCommand("傻狗mute", "/mute")]
         public static async Task Mute(GroupMessageInfo groupMsgInfo)
         {
+
             if (groupMsgInfo.Group.CanManage)
             {
                 if (groupMsgInfo.UserRole != Role.Member || groupMsgInfo.IsOwner)
                 {
-                    if (groupMsgInfo.BotRole != Role.Member)
+                    var botInfo = await groupMsgInfo.bot.GetGroupMemberInfo(groupMsgInfo.Group.GroupId, (long)StaticData.BotConfig.BotQQ!);
+                    var role = botInfo.Role;
+                    if (role != Role.Member)
                     {
                         if (groupMsgInfo.AtTargets.Count == 0) return;
                         var target = groupMsgInfo.AtTargets[0];
@@ -86,7 +89,9 @@ namespace SgBotOB.Responders.Commands.GroupCommands
             {
                 if (groupMsgInfo.UserRole != Role.Member || groupMsgInfo.IsOwner)
                 {
-                    if (groupMsgInfo.BotRole != Role.Member)
+                    var botInfo = await groupMsgInfo.bot.GetGroupMemberInfo(groupMsgInfo.Group.GroupId, (long)StaticData.BotConfig.BotQQ!);
+                    var role = botInfo.Role;
+                    if (role != Role.Member)
                     {
                         if (groupMsgInfo.AtTargets.Count == 0) return;
                         var target = groupMsgInfo.AtTargets[0];
@@ -127,7 +132,9 @@ namespace SgBotOB.Responders.Commands.GroupCommands
             {
                 if (groupMsgInfo.UserRole != Role.Member || groupMsgInfo.IsOwner)
                 {
-                    if (groupMsgInfo.BotRole != Role.Member)
+                    var botInfo = await groupMsgInfo.bot.GetGroupMemberInfo(groupMsgInfo.Group.GroupId, (long)StaticData.BotConfig.BotQQ!);
+                    var role = botInfo.Role;
+                    if (role != Role.Member)
                     {
                         await groupMsgInfo.bot.SetGroupWholeBan(groupMsgInfo.Group.GroupId, true);
                         RespondQueue.AddGroupRespond(new GroupRespondInfo(groupMsgInfo, "全体禁言成功", true));
@@ -155,7 +162,9 @@ namespace SgBotOB.Responders.Commands.GroupCommands
             {
                 if (groupMsgInfo.UserRole != Role.Member || groupMsgInfo.IsOwner)
                 {
-                    if (groupMsgInfo.BotRole != Role.Member)
+                    var botInfo = await groupMsgInfo.bot.GetGroupMemberInfo(groupMsgInfo.Group.GroupId, (long)StaticData.BotConfig.BotQQ!);
+                    var role = botInfo.Role;
+                    if (role != Role.Member)
                     {
                         await groupMsgInfo.bot.SetGroupWholeBan(groupMsgInfo.Group.GroupId, false);
                         RespondQueue.AddGroupRespond(new GroupRespondInfo(groupMsgInfo, "解除全体禁言成功", true));
@@ -183,7 +192,9 @@ namespace SgBotOB.Responders.Commands.GroupCommands
             {
                 if (groupMsgInfo.UserRole != Role.Member || groupMsgInfo.IsOwner)
                 {
-                    if (groupMsgInfo.BotRole != Role.Member)
+                    var botInfo = await groupMsgInfo.bot.GetGroupMemberInfo(groupMsgInfo.Group.GroupId, (long)StaticData.BotConfig.BotQQ!);
+                    var role = botInfo.Role;
+                    if (role != Role.Member)
                     {
                         if (groupMsgInfo.AtTargets.Count == 0) return;
                         var target = groupMsgInfo.AtTargets[0];
