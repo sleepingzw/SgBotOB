@@ -47,11 +47,11 @@
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
-              "version": "[8.0.5, )"
+              "version": "[8.0.6, )"
             },
             "Mliybs.OneBot.V11": {
               "target": "Package",
-              "version": "[0.9.8, )"
+              "version": "[0.9.92, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",

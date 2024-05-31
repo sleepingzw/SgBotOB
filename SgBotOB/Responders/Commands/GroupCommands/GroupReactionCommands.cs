@@ -114,6 +114,12 @@ namespace SgBotOB.Responders.Commands.GroupCommands
                 RespondQueue.AddGroupRespond(new GroupRespondInfo(groupMsgInfo, "没有找到传话内容", true));
                 return;
             }
+            var groupInfo = await groupMsgInfo.bot.GetGroupInfo(groupMsgInfo.Group.GroupId);
+            if (groupInfo.GroupName != groupMsgInfo.Group.GroupName)
+            {
+                groupMsgInfo.Group.GroupName = groupInfo.GroupName;
+                await DatabaseOperator.UpdateGroupInfo(groupMsgInfo.Group);
+            }
             var msg = new OwnerMessageInfo()
             {
                 What = groupMsgInfo.PlainMessages[1],

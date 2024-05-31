@@ -62,6 +62,6 @@ Initializer.StartQueueOut();
 exit.WaitOne();
 static void FirstChanceHandler(object source, FirstChanceExceptionEventArgs e)
 {
-    Console.WriteLine("FirstChanceException event raised in {0}: {1}",
-        AppDomain.CurrentDomain.FriendlyName, e.Exception.StackTrace);
+    Console.WriteLine("{0}FirstChanceException event raised in {1}: {2}",
+        DateTime.Now.ToString("HH-mm-ss"),AppDomain.CurrentDomain.FriendlyName, e.Exception.ToString());
 }

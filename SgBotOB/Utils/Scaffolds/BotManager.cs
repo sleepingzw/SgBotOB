@@ -25,7 +25,7 @@ namespace SgBotOB.Utils.Scaffolds
         public static void SubscribeAsync(OneBot bot, bool test, bool log)
         {
             // bot.MessageReceived.OfType<UnknownReceiver>().Subscribe();
-            bot.MessageReceived.Retry().OfType<GroupMessageReceiver>().Subscribe(receiver =>
+            bot.MessageReceived.OfType<GroupMessageReceiver>().Subscribe(receiver =>
             {
                 //lastGet = DateTime.Now;
                 //ReConnect(bot, test, log);
@@ -54,7 +54,7 @@ namespace SgBotOB.Utils.Scaffolds
                 }
             });
             //处理好友请求
-            bot.RequestReceived.Retry().OfType<FriendRequestReceiver>().Subscribe(r =>
+            bot.RequestReceived.OfType<FriendRequestReceiver>().Subscribe(r =>
             {
                 Task.Run(async () =>
                 {
@@ -67,12 +67,12 @@ namespace SgBotOB.Utils.Scaffolds
                     await bot.SendPrivateMessage((long)StaticData.BotConfig.OwnerQQ!, new MessageChainBuilder().Text($"好友申请 {r.UserId}").Build());
                 });
             });
-            bot.MessageReceived.Retry().OfType<PrivateMessageReceiver>().Subscribe(receiver =>
+            bot.MessageReceived.OfType<PrivateMessageReceiver>().Subscribe(receiver =>
             {
                 PrivateMessageResponder.Respond(receiver, bot);
             });
             //离开群聊通知
-            bot.NoticeReceived.Retry().OfType<GroupDecreaseNoticeReceiver>().Subscribe(r =>
+            bot.NoticeReceived.OfType<GroupDecreaseNoticeReceiver>().Subscribe(r =>
             {
                 Task.Run(async () =>
                 {
@@ -93,7 +93,7 @@ namespace SgBotOB.Utils.Scaffolds
                 });
             });
             //入群通知
-            bot.NoticeReceived.Retry().OfType<GroupIncreaseNoticeReceiver>().Subscribe(r =>
+            bot.NoticeReceived.OfType<GroupIncreaseNoticeReceiver>().Subscribe(r =>
             {
                 Task.Run(async () =>
                 {

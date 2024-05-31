@@ -1,3 +1,4 @@
+using System.Linq.Expressions;
 using System.Reflection;
 using Mliybs.OneBot.V11.Data.Messages;
 using Mliybs.OneBot.V11.Data.Receivers.Messages;
@@ -195,15 +196,22 @@ namespace SgBotOB.Responders
             // 判断随机复读响应
             if (SlpzMethods.IsOk(groupMsgInfo.Group.RepeatFrequency))
             {
-                if (groupMsgInfo.PlainMessages.Count==0&&groupMsgInfo.ImageMessages.Count==0)
+                try
                 {
-                    return false;
+                    if (groupMsgInfo.PlainMessages.Count == 0 && groupMsgInfo.ImageMessages.Count == 0)
+                    {
+                        return false;
+                    }
+                    await groupMsgInfo.Send(groupMsgInfo.RawChain);
+                    RepeatCache.Refresh(groupMsgInfo.Group.GroupId);
+                    return true;
                 }
-                await groupMsgInfo.Send(groupMsgInfo.RawChain);
-                RepeatCache.Refresh(groupMsgInfo.Group.GroupId);
-                return true;
+                catch
+                {
+                    await groupMsgInfo.bot.SendPrivateMessage((long)StaticData.BotConfig.OwnerQQ!, DataOperator.ToJsonString(groupMsgInfo.RawChain,true));
+                }
             }
             return false;
-        }
+        }        
     }
 }

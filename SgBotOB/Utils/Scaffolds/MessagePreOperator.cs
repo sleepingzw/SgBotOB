@@ -71,7 +71,6 @@ namespace SgBotOB.Utils.Scaffolds
                     }
                 }
             }
-
             //是否owner
             if (g.Sender.UserId == 2826241064)
             {
@@ -99,12 +98,12 @@ namespace SgBotOB.Utils.Scaffolds
                 (Role)g.Sender.Role!,
                 rawChain);
 
-            var groupInfo = await bot.GetGroupInfo(g.GroupId);
-            if (groupInfo.GroupName != groupReceiverInfo.Group.GroupName)
-            {
-                groupReceiverInfo.Group.GroupName = groupInfo.GroupName;
-                await DatabaseOperator.UpdateGroupInfo(groupReceiverInfo.Group);
-            }
+            //var groupInfo = await bot.GetGroupInfo(g.GroupId);
+            //if (groupInfo.GroupName != groupReceiverInfo.Group.GroupName)
+            //{
+            //    groupReceiverInfo.Group.GroupName = groupInfo.GroupName;
+            //    await DatabaseOperator.UpdateGroupInfo(groupReceiverInfo.Group);
+            //}
             var nickname = g.Sender.Nickname;
             if (nickname is not null)
             {
