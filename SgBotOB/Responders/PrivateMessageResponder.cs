@@ -27,19 +27,20 @@ namespace SgBotOB.Responders
             var ll = cc.Split(' ');
             switch (ll[0])
             {
-                case "通过好友":
-                    var id = long.Parse(ll[1]);
-                    if (FriendRequestOperator.TryHandleRequest(id, out var requested))
-                    {
-                        await bot.SetFriendAddRequest(requested!.Flag, true);
-                        await r.With(bot).Reply($"{id} approve");
-                        FriendRequestOperator.RemoveRequest(id);
-                    }
-                    else
-                    {
-                        await r.With(bot).Reply($"{id} did not exist");
-                    }
-                    break;
+                //case "通过好友":
+                //    var id = long.Parse(ll[1]);
+                //    if (FriendRequestOperator.TryHandleRequest(id, out var requested))
+                //    {
+                        
+                //        await bot.SetFriendAddRequest(requested. true);
+                //        await r.With(bot).Reply($"{id} approve");
+                //        FriendRequestOperator.RemoveRequest(id);
+                //    }
+                //    else
+                //    {
+                //        await r.With(bot).Reply($"{id} did not exist");
+                //    }
+                //    break;
                 case "回复传话":
                     var group = ll[1];
                     var who = ll[2];

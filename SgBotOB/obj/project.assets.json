@@ -302,7 +302,7 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "Mliybs.OneBot.V11/0.9.92": {
+      "Mliybs.OneBot.V11/0.9.94": {
         "type": "package",
         "dependencies": {
           "System.Reactive": "6.0.0"
@@ -1103,10 +1103,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Mliybs.OneBot.V11/0.9.92": {
-      "sha512": "FgGWOw99cAJDab875yuauHGnJ8YsjHdfcmhgLAF1SPiIaENbgwtYuEXpGzUbbWk860bIv0bv7NZJ1tzaWX4Uhw==",
+    "Mliybs.OneBot.V11/0.9.94": {
+      "sha512": "ABITSKPO3fXnfr/EddD+8HUOMf32Ep94yqKnY2YOiagP2B2oE9mKdgrYTyYfkPfGj5ZqUbfpgbVnHGDhCgQyRg==",
       "type": "package",
-      "path": "mliybs.onebot.v11/0.9.92",
+      "path": "mliybs.onebot.v11/0.9.94",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1115,7 +1115,7 @@
         "icon.png",
         "lib/net6.0/Mliybs.OneBot.V11.dll",
         "lib/netstandard2.1/Mliybs.OneBot.V11.dll",
-        "mliybs.onebot.v11.0.9.92.nupkg.sha512",
+        "mliybs.onebot.v11.0.9.94.nupkg.sha512",
         "mliybs.onebot.v11.nuspec"
       ]
     },
@@ -1550,7 +1550,7 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.6",
-      "Mliybs.OneBot.V11 >= 0.9.92",
+      "Mliybs.OneBot.V11 >= 0.9.94",
       "SixLabors.ImageSharp >= 3.1.4",
       "SkiaSharp.NativeAssets.Linux >= 2.88.8",
       "Spectre.Console >= 0.49.1"
@@ -1606,7 +1606,7 @@
           },
           "Mliybs.OneBot.V11": {
             "target": "Package",
-            "version": "[0.9.92, )"
+            "version": "[0.9.94, )"
           },
           "SixLabors.ImageSharp": {
             "target": "Package",
@@ -1637,7 +1637,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

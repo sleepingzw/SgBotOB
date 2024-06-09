@@ -54,8 +54,9 @@ namespace SgBotOB.Utils.Scaffolds
                 }
             });
             //处理好友请求
-            bot.RequestReceived.OfType<FriendRequestReceiver>().Subscribe(r =>
+            bot.NoticeReceived.OfType<FirendAddNoticeReceiver>().Subscribe(r =>
             {
+                Logger.Log($"收到好友申请{r.UserId}", 1);
                 Task.Run(async () =>
                 {
                     var tempm = await DatabaseOperator.FindUser(r.UserId);
@@ -97,10 +98,22 @@ namespace SgBotOB.Utils.Scaffolds
             {
                 Task.Run(async () =>
                 {
-                    var who = await DatabaseOperator.FindUser(r.UserId);
-                    var name = who.Nickname;
-                    await bot.SendGroupMessage(r.GroupId, new MessageChainBuilder().Text($"{name} 加入了本群").Build());
+                    if (r.UserId != StaticData.BotConfig.BotQQ)
+                    {
+                        var who = await DatabaseOperator.FindUser(r.UserId);
+                        var name = who.Nickname;
+                        await bot.SendGroupMessage(r.GroupId, new MessageChainBuilder().Text($"{name} 加入了本群").Build());
+                    }
+                    else
+                    {
+                        await bot.SendGroupMessage(r.GroupId, new MessageChainBuilder().Text("输入 傻狗menu 查看帮助").Build());
+                    }
                 });
+            });
+            bot.RequestReceived.OfType<GroupRequestReceiver>().Subscribe(r =>
+            {
+                bot.SetGroupAddRequest(r.Flag, GroupRequestReceiver.GroupRequestType.Add);
+                Logger.Log($"加入群聊 {r.GroupId} 成功", 1);
             });
             //戳一戳
             //bot.NoticeReceived.OfType<NotifyNoticeReceiver>().Subscribe(r =>

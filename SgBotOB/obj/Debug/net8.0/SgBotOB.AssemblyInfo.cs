@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SgBotOB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a680b5a2cb8a258d59884ccb90eab2e67652d7da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dc4b776e6e1f928a3c530376249889409962f897")]
 [assembly: System.Reflection.AssemblyProductAttribute("SgBotOB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SgBotOB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

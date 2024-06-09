@@ -1,4 +1,5 @@
-﻿using Mliybs.OneBot.V11.Data.Receivers.Requests;
+﻿using Mliybs.OneBot.V11.Data.Receivers.Notices;
+using Mliybs.OneBot.V11.Data.Receivers.Requests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,14 +10,14 @@ namespace SgBotOB.Utils.Scaffolds
 {
     internal static class FriendRequestOperator
     {
-        private static Dictionary<long, FriendRequestReceiver> _newFriendRequested = new();
+        private static Dictionary<long, FirendAddNoticeReceiver> _newFriendRequested = new();
 
-        public static bool AddRequest(long id, FriendRequestReceiver requested)
+        public static bool AddRequest(long id, FirendAddNoticeReceiver requested)
         {
             return _newFriendRequested.TryAdd(id, requested);
         }
 
-        public static bool TryHandleRequest(long id, out FriendRequestReceiver? requested)
+        public static bool TryHandleRequest(long id, out FirendAddNoticeReceiver? requested)
         {
             if (_newFriendRequested.ContainsKey(id))
             {

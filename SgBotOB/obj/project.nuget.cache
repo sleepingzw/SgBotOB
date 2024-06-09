@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VYjn3AX+vio6qAmdOP0wgQi8bb2SF6UhdsoVs/jL/OvY+mnmhyN75mUIWYoEyxAwXPJ2Mr/2phsSagQDMv33GQ==",
+  "dgSpecHash": "IT0aNQWcuUU=",
   "success": true,
   "projectFilePath": "D:\\vspjt\\SgBotOB\\SgBotOB\\SgBotOB.csproj",
   "expectedPackageFiles": [
@@ -21,7 +21,7 @@
     "C:\\Users\\SLPZ\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\SLPZ\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\SLPZ\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\SLPZ\\.nuget\\packages\\mliybs.onebot.v11\\0.9.92\\mliybs.onebot.v11.0.9.92.nupkg.sha512",
+    "C:\\Users\\SLPZ\\.nuget\\packages\\mliybs.onebot.v11\\0.9.94\\mliybs.onebot.v11.0.9.94.nupkg.sha512",
     "C:\\Users\\SLPZ\\.nuget\\packages\\sixlabors.imagesharp\\3.1.4\\sixlabors.imagesharp.3.1.4.nupkg.sha512",
     "C:\\Users\\SLPZ\\.nuget\\packages\\skiasharp\\2.88.8\\skiasharp.2.88.8.nupkg.sha512",
     "C:\\Users\\SLPZ\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.8\\skiasharp.nativeassets.linux.2.88.8.nupkg.sha512",

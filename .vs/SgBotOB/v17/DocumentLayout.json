@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\vspjt\\SgBotOB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\utils\\scaffolds\\botmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\utils\\scaffolds\\botmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\utils\\scaffolds\\friendrequestoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\utils\\scaffolds\\friendrequestoperator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\responders\\privatemessageresponder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\responders\\privatemessageresponder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\responders\\groupmessageresponder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\responders\\groupmessageresponder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|d:\\vspjt\\sgbotob\\sgbotob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD34DCAD-A404-4BE3-ABDE-79CDCA4BA911}|SgBotOB\\SgBotOB.csproj|solutionrelative:sgbotob\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,47 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FriendRequestOperator.cs",
+              "DocumentMoniker": "D:\\vspjt\\SgBotOB\\SgBotOB\\Utils\\Scaffolds\\FriendRequestOperator.cs",
+              "RelativeDocumentMoniker": "SgBotOB\\Utils\\Scaffolds\\FriendRequestOperator.cs",
+              "ToolTip": "D:\\vspjt\\SgBotOB\\SgBotOB\\Utils\\Scaffolds\\FriendRequestOperator.cs",
+              "RelativeToolTip": "SgBotOB\\Utils\\Scaffolds\\FriendRequestOperator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T05:57:01.825Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "PrivateMessageResponder.cs",
+              "DocumentMoniker": "D:\\vspjt\\SgBotOB\\SgBotOB\\Responders\\PrivateMessageResponder.cs",
+              "RelativeDocumentMoniker": "SgBotOB\\Responders\\PrivateMessageResponder.cs",
+              "ToolTip": "D:\\vspjt\\SgBotOB\\SgBotOB\\Responders\\PrivateMessageResponder.cs",
+              "RelativeToolTip": "SgBotOB\\Responders\\PrivateMessageResponder.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAADwvyQAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-08T05:43:22.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\vspjt\\SgBotOB\\SgBotOB\\Program.cs",
               "RelativeDocumentMoniker": "SgBotOB\\Program.cs",
               "ToolTip": "D:\\vspjt\\SgBotOB\\SgBotOB\\Program.cs",
               "RelativeToolTip": "SgBotOB\\Program.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAAC8AAAABAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwCoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T08:30:45.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "GroupMessageResponder.cs",
               "DocumentMoniker": "D:\\vspjt\\SgBotOB\\SgBotOB\\Responders\\GroupMessageResponder.cs",
               "RelativeDocumentMoniker": "SgBotOB\\Responders\\GroupMessageResponder.cs",
               "ToolTip": "D:\\vspjt\\SgBotOB\\SgBotOB\\Responders\\GroupMessageResponder.cs",
               "RelativeToolTip": "SgBotOB\\Responders\\GroupMessageResponder.cs",
-              "ViewState": "AQIAAMkAAAAAAAAAAAAAANgAAAABAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAowMUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T06:55:39.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BotManager.cs",
               "DocumentMoniker": "D:\\vspjt\\SgBotOB\\SgBotOB\\Utils\\Scaffolds\\BotManager.cs",
               "RelativeDocumentMoniker": "SgBotOB\\Utils\\Scaffolds\\BotManager.cs",
               "ToolTip": "D:\\vspjt\\SgBotOB\\SgBotOB\\Utils\\Scaffolds\\BotManager.cs",
               "RelativeToolTip": "SgBotOB\\Utils\\Scaffolds\\BotManager.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAowIMAAAAtAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAowGAAAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-31T06:06:48.847Z",
               "EditorCaption": ""

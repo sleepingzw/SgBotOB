@@ -208,7 +208,7 @@ namespace SgBotOB.Responders
                 }
                 catch
                 {
-                    await groupMsgInfo.bot.SendPrivateMessage((long)StaticData.BotConfig.OwnerQQ!, DataOperator.ToJsonString(groupMsgInfo.RawChain,true));
+                    //await groupMsgInfo.bot.SendPrivateMessage((long)StaticData.BotConfig.OwnerQQ!, DataOperator.ToJsonString(groupMsgInfo.RawChain,true));
                 }
             }
             return false;

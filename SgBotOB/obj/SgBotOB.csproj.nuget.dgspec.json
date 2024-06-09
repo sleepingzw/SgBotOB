@@ -51,7 +51,7 @@
             },
             "Mliybs.OneBot.V11": {
               "target": "Package",
-              "version": "[0.9.92, )"
+              "version": "[0.9.94, )"
             },
             "SixLabors.ImageSharp": {
               "target": "Package",
@@ -82,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
